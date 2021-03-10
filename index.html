@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旅游市场</title>
+    <link rel="stylesheet" href="./css/dome.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/pseudo.css">
+</head>
+
+<body>
+    <header>
+        <div class="title-img">
+            <img src="/images/titlelogo.png" alt="">
+        </div>
+        <h1>广西全域旅游市场预测分析大数据</h1>
+        <div class="title-i">
+            <i></i>
+            <i></i>
+            <i></i>
+        </div>
+        <div class="title-rtxt">
+            <p>预测时间段</p>
+            <p>2021.01-2021.02</p>
+        </div>
+    </header>
+    <div class="content-box">
+        <div class="contb-left">
+            <!-- 地图 -->
+            <div class="map-box">
+
+                <div class="map-letft-box">
+                    <div class="map-title">
+                        <h3>广西游客量月度预测</h3>
+                    </div>
+                    <span class="mapn">467.251</span>
+                    <span class="maptc">万人次,</span>
+                    <span>占比</span>
+                    <span class="maptn">38%</span>
+                    <div class="map-title map-title2">
+                        <h3>国内游客量月度预测</h3>
+                    </div>
+                    <span class="mapn map-tc2">467.25</span>
+                    <span class="maptc map-tc2">万人次,</span>
+                    <span>占比</span>
+                    <span class="maptn map-tc2">38%</span>
+                </div>
+                <div class="map-leftb-box">
+                    <div class="map-title">
+                        <h3>跨省游客占比月度预测</h3>
+                    </div>
+                    <div class="mlfc">
+                        <div class="mlfc-item">
+                            <div class="mlfc-ind">01</div>
+                            <span class="mlfc-name">黑龙江</span>
+                            <div class="mlfc-line-box">
+                                <i class="ml-line"></i>
+                            </div>
+                            <div class="mlfc-bili">189.56</div>
+                            <span>同比+19.12%</span>
+                        </div>
+                        <div class="mlfc-item">
+                            <div class="mlfc-ind">02</div>
+                            <span class="mlfc-name">黑龙江</span>
+                            <div class="mlfc-line-box">
+                                <i class="ml-line"></i>
+                            </div>
+                            <div class="mlfc-bili">189.56</div>
+                            <span>同比+19.12%</span>
+                        </div>
+                        <div class="mlfc-item">
+                            <div class="mlfc-ind">03</div>
+                            <span class="mlfc-name">黑龙江</span>
+                            <div class="mlfc-line-box">
+                                <i class="ml-line"></i>
+                            </div>
+                            <div class="mlfc-bili">189.56</div>
+                            <span>同比+19.12%</span>
+                        </div>
+                        <div class="mlfc-item">
+                            <div class="mlfc-ind">04</div>
+                            <span class="mlfc-name">黑龙江</span>
+                            <div class="mlfc-line-box">
+                                <i class="ml-line"></i>
+                            </div>
+                            <div class="mlfc-bili">189.56</div>
+                            <span>同比+19.12%</span>
+                        </div>
+                        <div class="mlfc-item">
+                            <div class="mlfc-ind">05</div>
+                            <span class="mlfc-name">黑龙江</span>
+                            <div class="mlfc-line-box">
+                                <i class="ml-line"></i>
+                            </div>
+                            <div class="mlfc-bili">189.56</div>
+                            <span>同比+19.12%</span>
+                        </div>
+                    </div>
+                    <p class="maplb">单位：万人天</p>
+                </div>
+                <div class="map-wl-bor">
+                    <!-- map-wl-bor用作伪类 -->
+                </div>
+                <div class="map-left-xd xd">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </div>
+                <div class="map-right-xd xd">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </div>
+                <div id="map"></div>
+            </div>
+            <!-- 6广西各地市游客量分布月预测 -->
+            <div class="chart-long ">
+                <div class="ch-title">
+                    <h2>广西各地市游客量分布月预测</h2>
+                </div>
+                <i class="chart-wl-top"></i>
+                <i class="chart-wl-bottom"></i>
+                <i class="chart-wl-left"></i>
+                <i class="chart-wl-right"></i>
+                <div id='distributed'></div>
+            </div>
+        </div>
+        <div class="contb-right">
+            <!-- 2春节游客出游迁徙趋势预测 -->
+            <div class="chart">
+                <div class="ch-title">
+                    <h2>春节游客出游迁徙趋势预测</h2>
+                </div>
+                <i class="chart-wl-top"></i>
+                <i class="chart-wl-bottom"></i>
+                <i class="chart-wl-left"></i>
+                <i class="chart-wl-right"></i>
+                <div class="chunjie">
+                    <div id="chunleft"></div>
+                    <div class="chunright">
+                        <div class="chun-item">
+                            <img src="/images/icontop.png" class="icontop" alt="">
+                            <div class="chunib">
+                                <p>人流上升</p>
+                                <div>2月9日</div>
+                            </div>
+                        </div>
+                        <div class="chun-item">
+                            <img src="/images/iconcon.png" class="icontop" alt="">
+                            <div class="chunib">
+                                <p>人流峰值</p>
+                                <div style="color:#C95555">2月13日</div>
+                            </div>
+                        </div>
+                        <div class="chun-item">
+                            <img src="/images/iconbot.png" class="icontop" alt="">
+                            <div class="chunib">
+                                <p>人流下降</p>
+                                <div style="color:#5EBEBF">2月15日</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- 3省级客源地游客量TOP10月度预测 -->
+            <div class="chart">
+                <div class="ch-title">
+                    <h2>省级客源地游客量TOP10月度预测</h2>
+                </div>
+                <i class="chart-wl-top"></i>
+                <i class="chart-wl-bottom"></i>
+                <i class="chart-wl-left"></i>
+                <i class="chart-wl-right"></i>
+                <div class="visitors">
+                    <div class="visitors-item">
+                        <div class="visnum">N0.01</div>
+                        <div class="visnamebox">
+                            <p>黑龙江</p>
+                            <div class="visb"></div>
+                        </div>
+                    </div>
+                    <div class="visitors-item">
+                        <div class="visnum">N0.01</div>
+                        <div class="visnamebox">
+                            <p>黑龙江</p>
+                            <div class="visb"></div>
+                        </div>
+                    </div>
+                    <div class="visitors-item">
+                        <div class="visnum">N0.01</div>
+                        <div class="visnamebox">
+                            <p>黑龙江</p>
+                            <div class="visb"></div>
+                        </div>
+                    </div>
+                    <div class="visitors-item">
+                        <div class="visnum">N0.01</div>
+                        <div class="visnamebox">
+                            <p>黑龙江</p>
+                            <div class="visb"></div>
+                        </div>
+                    </div>
+                    <div class="visitors-item">
+                        <div class="visnum">N0.01</div>
+                        <div class="visnamebox">
+                            <p>黑龙江</p>
+                            <div class="visb"></div>
+                        </div>
+                    </div>
+                    <div class="visitors-item">
+                        <div class="visnum">N0.01</div>
+                        <div class="visnamebox">
+                            <p>黑龙江</p>
+                            <div class="visb"></div>
+                        </div>
+                    </div>
+                    <div class="visitors-item">
+                        <div class="visnum">N0.01</div>
+                        <div class="visnamebox">
+                            <p>黑龙江</p>
+                            <div class="visb"></div>
+                        </div>
+                    </div>
+                    <div class="visitors-item">
+                        <div class="visnum">N0.01</div>
+                        <div class="visnamebox">
+                            <p>黑龙江</p>
+                            <div class="visb"></div>
+                        </div>
+                    </div>
+                    <div class="visitors-item">
+                        <div class="visnum">N0.01</div>
+                        <div class="visnamebox">
+                            <p>黑龙江</p>
+                            <div class="visb"></div>
+                        </div>
+                    </div>
+                    <div class="visitors-item">
+                        <div class="visnum">N0.01</div>
+                        <div class="visnamebox">
+                            <p>黑龙江</p>
+                            <div class="visb"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- 4游客属性月度预测 -->
+            <div class="chart">
+                <div class="ch-title">
+                    <h2>游客属性月度预测</h2>
+                </div>
+                <i class="chart-wl-top"></i>
+                <i class="chart-wl-bottom"></i>
+                <i class="chart-wl-left"></i>
+                <i class="chart-wl-right"></i>
+                <div class=" chart-monthly">
+                    <div class="monthly-box">
+                        <div id="monthly"></div>
+                        <div class="monthly-sex">
+                            <div class="msex">
+                                <div class="ms-yuan"></div>
+                                <p class="madt">女性游客占</p>
+                                <p class="msexnum1">41%</p>
+                            </div>
+                            <div class="msex">
+                                <div class="ms-yuan lanse"></div>
+                                <p class="madt">男性游客占</p>
+                                <p class="msexnum2">58%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="molist">
+
+                        <div class="mlfc-item mopse">
+                            <span class="mlfc-name">00后</span>
+                            <div class="mlfc-line-box mline-box">
+                                <i class="monthly-line"></i>
+                            </div>
+                            <span>19.1%</span>
+                        </div>
+                        <div class="mlfc-item mopse">
+                            <span class="mlfc-name">00后</span>
+                            <div class="mlfc-line-box mline-box">
+                                <i class="monthly-line"></i>
+                            </div>
+                            <span>19.1%</span>
+                        </div>
+                        <div class="mlfc-item mopse">
+                            <span class="mlfc-name">00后</span>
+                            <div class="mlfc-line-box mline-box">
+                                <i class="monthly-line"></i>
+                            </div>
+                            <span>19.1%</span>
+                        </div>
+                        <div class="mlfc-item mopse">
+                            <span class="mlfc-name">00后</span>
+                            <div class="mlfc-line-box mline-box">
+                                <i class="monthly-line"></i>
+                            </div>
+                            <span>19.1%</span>
+                        </div>
+                        <div class="mlfc-item mopse">
+                            <span class="mlfc-name">00后</span>
+                            <div class="mlfc-line-box mline-box">
+                                <i class="monthly-line"></i>
+                            </div>
+                            <span>19.1%</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- 5A级景区热度排行TOP10月度预测 -->
+            <div class="chart">
+                <div class="ch-title">
+                    <h2>A级景区热度排行TOP10月度预测</h2>
+                </div>
+                <i class="chart-wl-top"></i>
+                <i class="chart-wl-bottom"></i>
+                <i class="chart-wl-left"></i>
+                <i class="chart-wl-right"></i>
+                <div class="heat">
+                    <div class="heat-item">
+                        <div class="hi-t">
+                            <p>南宁沃顿国际大酒店</p>
+                            <span>19.1%</span>
+                        </div>
+                        <div class="hi-b">
+                            <div class="hib-color"></div>
+                        </div>
+                    </div>
+                    <div class="heat-item">
+                        <div class="hi-t">
+                            <p>南宁沃顿国际大酒店</p>
+                            <span>19.1%</span>
+                        </div>
+                        <div class="hi-b">
+                            <div class="hib-color"></div>
+                        </div>
+                    </div>
+                    <div class="heat-item">
+                        <div class="hi-t">
+                            <p>南宁沃顿国际大酒店</p>
+                            <span>19.1%</span>
+                        </div>
+                        <div class="hi-b">
+                            <div class="hib-color"></div>
+                        </div>
+                    </div>
+                    <div class="heat-item">
+                        <div class="hi-t">
+                            <p>南宁沃顿国际大酒店</p>
+                            <span>19.1%</span>
+                        </div>
+                        <div class="hi-b">
+                            <div class="hib-color"></div>
+                        </div>
+                    </div>
+                    <div class="heat-item">
+                        <div class="hi-t">
+                            <p>南宁沃顿国际大酒店</p>
+                            <span>19.1%</span>
+                        </div>
+                        <div class="hi-b">
+                            <div class="hib-color"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 7出行交通方式月度预测-->
+            <div class="chart">
+                <div class="ch-title">
+                    <h2>出行交通方式月度预测</h2>
+                </div>
+                <i class="chart-wl-top"></i>
+                <i class="chart-wl-bottom"></i>
+                <i class="chart-wl-left"></i>
+                <i class="chart-wl-right"></i>
+                <div class="circle-box">
+                    <div id="circle1"></div>
+                    <div id="circle2"></div>
+                    <div id="circle3"></div>
+                </div>
+            </div>
+            <!-- 8星级酒店热度排行TOP10月度预测 -->
+            <div class="chart">
+                <div class="ch-title">
+                    <h2>星级酒店热度排行TOP10月度预测</h2>
+                </div>
+                <i class="chart-wl-top"></i>
+                <i class="chart-wl-bottom"></i>
+                <i class="chart-wl-left"></i>
+                <i class="chart-wl-right"></i>
+                <div class="heat">
+                    <div class="heat-item">
+                        <div class="hi-t">
+                            <p>南宁沃顿国际大酒店</p>
+                            <span>19.1%</span>
+                        </div>
+                        <div class="hi-b">
+                            <div class="hib-color"></div>
+                        </div>
+                    </div>
+                    <div class="heat-item">
+                        <div class="hi-t">
+                            <p>南宁沃顿国际大酒店</p>
+                            <span>19.1%</span>
+                        </div>
+                        <div class="hi-b">
+                            <div class="hib-color"></div>
+                        </div>
+                    </div>
+                    <div class="heat-item">
+                        <div class="hi-t">
+                            <p>南宁沃顿国际大酒店</p>
+                            <span>19.1%</span>
+                        </div>
+                        <div class="hi-b">
+                            <div class="hib-color"></div>
+                        </div>
+                    </div>
+                    <div class="heat-item">
+                        <div class="hi-t">
+                            <p>南宁沃顿国际大酒店</p>
+                            <span>19.1%</span>
+                        </div>
+                        <div class="hi-b">
+                            <div class="hib-color"></div>
+                        </div>
+                    </div>
+                    <div class="heat-item">
+                        <div class="hi-t">
+                            <p>南宁沃顿国际大酒店</p>
+                            <span>19.1%</span>
+                        </div>
+                        <div class="hi-b">
+                            <div class="hib-color"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-rtop">
+
+        </div>
+
+
+    </div>
+</body>
+<script src="./js/echarts.min.js"></script>
+<script src="./js/china.js"></script>
+<script src="https://echarts.baidu.com/resource/echarts-stat-latest/dist/ecStat.min.js"></script>
+<script src="./js/index.js"></script>
+
+</html>
