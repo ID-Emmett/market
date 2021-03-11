@@ -135,7 +135,7 @@ let mapOption = {
             fontFamily: "Arial",
             borderWidth: 3,
             // backgroundColor: "#984455",
-            padding: [-40, -30, 20,200],
+            padding: [-40, -30, 20, 200],
             // margin:[50,20,5,10],
             lineHeight: 20,
 
