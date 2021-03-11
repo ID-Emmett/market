@@ -148,7 +148,7 @@ let mapOption = {
               },
               b: {
                 backgroundColor: {
-                  image: "/images/labelwind2.png",
+                  image: "./images/labelwind2.png",
                 },
                 height: 80,
                 lineHeight: 0,
