@@ -82,12 +82,12 @@ h1 {
   /* margin: 19px 15px; */
   /* padding: 19px 15px; */
   /* background-color: #4e3e3a; */
-  margin: 1%;
+  padding: 1%;
   /* margin-bottom: 0;
   margin-top: 0; */
   display: flex;
   flex-wrap: wrap;
-
+  height: calc(100% - 96px);
   /* padding-left: 24px; */
   /* align-items: center; */
   /* justify-content: center; */
@@ -95,6 +95,7 @@ h1 {
 .map-box {
   /* width: 47.865%; */
   width: 100%;
+  background-color: #012936;
 
   /* width: 917px; */
   height: 630px;
@@ -105,9 +106,9 @@ h1 {
   box-shadow: 0 0 1px 1px #003d52;
   position: relative;
   background-image: url(../images/mapbot.png);
-  background-repeat:no-repeat;
-   background-size:100% 100%;
-   -moz-background-size:100% 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
 }
 /* .mapbg{
   width: 100%;
@@ -231,8 +232,10 @@ h1 {
   background: linear-gradient(to right, #042129, #42c1c6);
 }
 #map {
-  width: 660px;
-  height: 530px;
+  /* width: 660px;
+  height: 530px; */
+  width: 80%;
+  height: 90%;
   /* background-color: rgba(197, 141, 150,0.5); */
   position: absolute;
   right: 0;
@@ -348,7 +351,7 @@ h1 {
 .chart {
   /* width: 24.427%; */
   /* width: 470px; */
-  width: 47.6%;
+  /* width: 47.6%; */
   width: 48.2%;
   height: 306px;
   border: 1px solid #003d52;
@@ -360,6 +363,7 @@ h1 {
   margin-left: 1.8%;
   /* background-color: #033844; */
   position: relative;
+  background-color: #012936;
 }
 .contb-right .chart:nth-child(5) {
   margin-bottom: 0;
@@ -412,6 +416,7 @@ h1 {
   /* margin: 0 0 18px 18px; */
   position: relative;
   margin-top: 18px;
+  background-color: #012936;
   /* margin-top: 2.4%; */
 }
 /* 省级客源地游客量TOP10月度预测 */
@@ -422,6 +427,7 @@ h1 {
   /* background-color: #688c8d; */
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   align-content: flex-start;
 }
 .visitors .visitors-item:nth-child(1) .visnum {
@@ -431,7 +437,7 @@ h1 {
   background: #d76f56;
 }
 .visitors-item {
-  width: 50%;
+  width: 48%;
   height: 40px;
   margin-top: 6px;
   /* background-color: #153b46; */
@@ -439,11 +445,12 @@ h1 {
   align-items: center;
 }
 .visnum {
-  font-size: 24px;
-  font-family: Akrobat;
-  font-weight: 400;
-  font-size: 16px;
-  font-family: Microsoft YaHei;
+  /* font-size: 24px; */
+  /* font-family: Akrobat-Regular; */
+  /* font-weight: 400; */
+  font-size: 18px;
+  /* font-family: Akrobat-Regular; */
+  /* font-family: Akrobat-Black; */
   font-weight: 400;
 }
 .visnamebox {
@@ -533,6 +540,9 @@ h1 {
   /* background-color: #647477; */
 }
 .chunright {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   width: 38%;
   height: 100%;
   /* background-color: #033844; */
@@ -541,7 +551,7 @@ h1 {
   /* background-color: hsl(191, 69%, 32%); */
   display: flex;
   align-items: center;
-  margin: 20px 0;
+  /* margin: 20px 0; */
 }
 .icontop {
   width: 42px;
@@ -567,6 +577,8 @@ h1 {
   /* background-color: pink; */
 }
 .contb-right {
+  /* height: 100%; */
+
   width: 52.135%;
   display: flex;
   flex-wrap: wrap;
@@ -577,7 +589,7 @@ h1 {
 /* .madt{
   font-size: 14px;
 } */
-/* 小于1800执行 */
+/* 宽度小于等于1800执行 */
 @media screen and (max-width: 1800px) {
   .mlfc-name {
     font-size: 12px;
@@ -611,7 +623,7 @@ h1 {
     top: 20%;
   }
 }
-/* 小于1700执行 */
+/* 宽度小于等于1700执行 */
 @media screen and (max-width: 1700px) {
   .mppse {
     font-size: 12px;
@@ -656,7 +668,223 @@ h1 {
   .visnum {
     font-size: 12px;
   }
-  .hi-t{
+  .hi-t {
     font-size: 14px;
+  }
+}
+/* 高度大于等于1200的情况下 */
+@media screen and (min-height: 1200px) {
+  body {
+    /* background-color: #06cbe4; */
+  }
+  .contb-left {
+    /* background-color: #1b4254; */
+  }
+  .map-box {
+    height: 702px;
+  }
+  .chart-long {
+    margin-top: 25px;
+    height: 340px;
+  }
+  #map {
+    height: 84%;
+  }
+  .contb-right {
+    /* background-color: #5a5c5c; */
+    height: 100%;
+  }
+  .chart {
+    height: 340px;
+  }
+  /* 图二 */
+  .chunjie {
+    height: 290px;
+  }
+  #chunleft {
+    height: 240px;
+  }
+  /* 图三 */
+  .visitors {
+    /* padding-top: 40px; */
+    font-size: 18px;
+  }
+  .visitors-item {
+    height: 48px;
+  }
+  .visnamebox {
+    height: 28px;
+  }
+  .visnum {
+    font-size: 20px;
+  }
+  /* 图4 */
+  .chart-monthly {
+  }
+  .monthly-box {
+    margin-top: 20px;
+    height: 250px;
+  }
+  .mopse {
+    margin: 15% 0;
+    font-size: 18px;
+  }
+  .mlfc-name {
+    font-size: 18px;
+  }
+  /* 图5 */
+  .heat {
+    height: 260px;
+  }
+  /* 图6 */
+  #distributed {
+    height: 280px;
+  }
+  .hi-t{
+    font-size: 16px;
+  }
+  .heat-item{
+    height: 30px;
+  }
+}
+
+@media screen and (max-height: 1050px) {
+  #distributed {
+    height: 240px;
+  }
+  .chart {
+    height: 296px;
+  }
+  .map-box {
+    height: 610px;
+  }
+  .heat {
+    height: 210px;
+  }
+  .chart-long {
+    height: 296px;
+  }
+  .molist {
+    padding-top: 10px;
+  }
+  .mopse {
+    margin-left: 30px;
+  }
+  .visnum {
+    font-size: 14px;
+  }
+  .visnamebox {
+    font-size: 14px;
+    height: 26px;
+  }
+  .heat-item {
+    height: 30px;
+  }
+  .ch-title h2 {
+    font-size: 18px;
+  }
+  #map{
+    height: 86%;
+    margin-top: -100px;
+  }
+  .heat-item{
+    height: 28px;
+  }
+  .hi-b {
+    height: 4px;
+  }
+  .hib-color {
+    height: 4px;
+  }
+}
+
+@media screen and (max-height: 900px) {
+  body {
+    /* background-color: #5e7174; */
+  }
+  header {
+    height: 66px;
+  }
+  .content-box {
+    height: calc(100% - 66px);
+  }
+  .title-img {
+    width: 30px;
+    height: 30px;
+  }
+  .title-i {
+    margin-top: -10px;
+  }
+  h1 {
+    font-size: 42px;
+  }
+  #distributed {
+    height: 210px;
+  }
+  .chart {
+    height: 260px;
+  }
+  .chart-long {
+    height: 260px;
+    margin-top: 10px;
+  }
+  .map-box {
+    height: 532px;
+  }
+  .heat {
+    height: 180px;
+    font-size: 14px;
+  }
+  .heat-item{
+    height: 24px;
+  }
+  .hi-b {
+    height: 4px;
+  }
+  .hib-color {
+    height: 4px;
+  }
+  .mopse{
+    height: 10px;
+  }
+  .monthly-box{
+    transform: scale(0.8);
+    margin-top: -6px;
+  }
+  #monthly {
+    width: 150px;
+    height: 150px;
+  }
+  #circle1 {
+    width: 120px;
+    height: 190px;
+  }
+  #circle2 {
+    width: 120px;
+    height: 190px;
+  }
+  #circle3 {
+    width: 120px;
+    height: 190px;
+  }
+  #chunleft {
+    height: 180px;
+    /* background-color: #033844; */
+  }
+  #map{
+    height: 86%;
+    margin-top: -100px;
+  }
+  .chunjie {
+    margin-top: -20px;
+  }
+  .chunright {
+    margin-top: 10px;
+  }
+  .circle-box {
+    margin-top: -20px;
+  }
+  .visitors-item {
+    height: 30px;
   }
 }
