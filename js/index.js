@@ -117,6 +117,67 @@ let mapOption = {
           //顶部选中区域颜色
           areaColor: "rgba(252, 25, 68, 0.7)",
           borderColor: "red",
+          label: {
+            // 在文本中，可以对部分文本采用 rich 中定义样式。
+            // 这里需要在文本中使用标记符号：
+            // `{styleName|text content text content}` 标记样式名。
+            // 注意，换行仍是使用 '\n'。
+            formatter: [
+              "{b| }",
+              "{a|{b}游客量月度预测}",
+              "{x| 467,251}", //显示数据
+              "{d| 万人次}",
+              // "{c|广西游客量月度预测}",
+            ].join("\n"),
+            // 这里是文本块的样式设置：
+            color: "#333",
+            fontSize: 14,
+            fontFamily: "Arial",
+            borderWidth: 3,
+            // backgroundColor: "#984455",
+            padding: [-40, -30, 20,200],
+            // margin:[50,20,5,10],
+            lineHeight: 20,
+
+            // rich 里是文本片段的样式设置：
+            rich: {
+              a: {
+                color: "#C95555",
+                lineHeight: 30,
+                padding: [100, 12, 30, 60],
+              },
+              b: {
+                backgroundColor: {
+                  image: "/images/labelwind2.png",
+                },
+                height: 80,
+                lineHeight: 0,
+              },
+              x: {
+                fontSize: 32,
+                color: "#fff",
+                fontFamily: "Akrobat-Black",
+
+                padding: [94, 60, 30, 60],
+              },
+              d: {
+                fontSize: 14,
+                color: "#fff",
+                padding: [90, -140, -6, 0],
+              },
+            },
+          },
+          // labelLine: {  指向折线
+          //   normal: {
+          //     length: 40,
+          //     length2: 90,
+          //     lineStyle: {
+          //       width: 10,
+          //       color:'yellow',
+          //       backgroundColor:'yellow'
+          //     },
+          //   },
+          // },
         },
       },
       //         regions: [{
