@@ -172,7 +172,89 @@ let mapOption = {
 // });
 map.setOption(mapOption); //设置option
 
+// 地图模块下的柱状图
 let distributed = echarts.init(document.getElementById("distributed"));
+
+//广西各地市游客量分布预测柱状图数据
+let bartu = [
+  170,
+  154,
+  146,
+  119,
+  70,
+  110,
+  110,
+  110,
+  200,
+  130,
+  123,
+  160,
+  144,
+  152,
+];
+//获取最大值--bartu柱状图列表的最大值下标
+let getMaxIndex = (arr) => {
+  var max = arr[0];
+  //声明了个变量 保存下标值
+  var index = 0;
+  for (var i = 0; i < arr.length; i++) {
+    if (max < arr[i]) {
+      max = arr[i];
+      index = i;
+    }
+  }
+  return index;
+};
+//替换下标内容--换成对象形式,实现图表最大值颜色变化
+let maxrep = {
+  value: bartu[getMaxIndex(bartu)],
+  itemStyle: { color: "#D76F56" },
+};
+bartu.splice(getMaxIndex(bartu), 1, maxrep);
+//广西各地市游客量分布预测折线图数据
+let linetu = [
+  260,
+  254,
+  246,
+  219,
+  220,
+  210,
+  210,
+  210,
+  290,
+  230,
+  223,
+  260,
+  244,
+  252,
+];
+//替换下标内容--换成对象形式,实现折线图最大值颜色变化
+let maxlinerep = {
+  value: linetu[getMaxIndex(linetu)],
+  itemStyle: {
+    borderColor: "#D76F56",
+    // color: "yellow",
+    borderWidth: 4,
+  },
+};
+linetu.splice(getMaxIndex(linetu), 1, maxlinerep);
+//广西各地市游客量分布预测x轴数据
+let citytu = [
+  "南宁",
+  "桂林",
+  "柳州",
+  "防城港",
+  "北海",
+  "玉林",
+  "钦州",
+  "玉林",
+  "玉林",
+  "玉林",
+  "玉林",
+  "贵港",
+  "玉林",
+  "贺州",
+];
 let distributedOption = {
   grid: {
     top: "10%",
@@ -193,28 +275,12 @@ let distributedOption = {
   // },
   xAxis: {
     type: "category",
-    data: [
-      "南宁",
-      "桂林",
-      "柳州",
-      "防城港",
-      "北海",
-      "玉林",
-      "钦州",
-      "玉林",
-      "玉林",
-      "玉林",
-      "玉林",
-      "贵港",
-      "玉林",
-      "贺州",
-    ],
+    data: citytu,
     //x轴线配置
     axisLine: {
       lineStyle: {
         width: 1, //x轴颜色宽度
         color: "#1D4559",
-        
       },
     },
     //刻度相关配置
@@ -273,49 +339,26 @@ let distributedOption = {
     //蓝色柱形图
     {
       name: "区内游客量(万人天)",
-      data: [
-        170,
-        154,
-        146,
-        119,
-        70,
-        110,
-        110,
-        110,
-        110,
-        130,
-        123,
-        160,
-        144,
-        152,
-      ],
+      data: bartu,
       type: "bar",
       barWidth: 16, //柱形图宽度
       showBackground: false,
       itemStyle: {
         color: "#42C1C6",
       },
+      // markPoint: {
+      //   //自定义最大值效果
+      //   symbol: "rect", //标注为矩形
+      //   symbolSize: 20, //标注的大小
+      //   symbolOffset: [0, -10], //隐藏标注背景
+      //   symbolBackgroundColor:'red',
+      //   data: [{ type: "max", itemStyle:{color:'red'},symbol:'roundRect' }],
+      // },
     },
-    // 黄色柱形图
 
     {
       name: "日游客量(万人天)",
-      data: [
-        260,
-        254,
-        246,
-        219,
-        220,
-        210,
-        210,
-        210,
-        210,
-        230,
-        223,
-        260,
-        244,
-        252,
-      ],
+      data: linetu,
       emphasis: {
         focus: "series",
       },
@@ -324,6 +367,13 @@ let distributedOption = {
       itemStyle: {
         //折线图
         normal: { label: { show: false, fontSize: 16 }, color: "#42C1C6" },
+      },
+      markPoint: {
+        //自定义最大值效果
+        symbol: "circle", //标注为矩形
+        symbolSize: 0.1, //标注的大小
+        symbolOffset: [0, -14], //隐藏标注背景
+        data: [{ type: "max", label: { color: "#D76F56", fontSize: 16 } }],
       },
     },
   ],
@@ -788,16 +838,16 @@ let chunleftOption = {
       color: "#59588D",
       axisLine: {
         show: true,
-        lineStyle:{
-          width:2,
-          color:'#023748',
+        lineStyle: {
+          width: 2,
+          color: "#023748",
           // opacity:0.2
-        }
+        },
       },
       axisLabel: {
         color: "#367D89",
-        fontSize:14,
-        interval: 0
+        fontSize: 14,
+        interval: 0,
       },
       splitLine: {
         // show: true
@@ -819,10 +869,10 @@ let chunleftOption = {
       splitNumber: 4,
       splitLine: {
         show: true,
-        lineStyle:{
-          color:'#092F3C',
+        lineStyle: {
+          color: "#092F3C",
           // opacity:0.2
-        }
+        },
       },
       axisLine: {
         show: false,

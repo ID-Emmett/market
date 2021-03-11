@@ -93,8 +93,9 @@ h1 {
   /* justify-content: center; */
 }
 .map-box {
-  width: 47.865%;
+  /* width: 47.865%; */
   width: 100%;
+
   /* width: 917px; */
   height: 630px;
   border-top: 1px solid #42c1c6;
@@ -103,7 +104,15 @@ h1 {
   border-right: 1px solid #003d52;
   box-shadow: 0 0 1px 1px #003d52;
   position: relative;
+  background-image: url(../images/mapbot.png);
+  background-repeat:no-repeat;
+   background-size:100% 100%;
+   -moz-background-size:100% 100%;
 }
+/* .mapbg{
+  width: 100%;
+  height: 100%;
+} */
 .map-letft-box {
   width: 28.35%;
   height: 218px;
@@ -229,7 +238,7 @@ h1 {
   right: 0;
   top: 0px;
   padding-top: 50px;
-  z-index: -1;
+  z-index: 1;
 }
 #distributed {
   width: 95%;
@@ -296,6 +305,7 @@ h1 {
   font-size: 20px;
   color: #f6886b;
 }
+
 .msexnum2 {
   font-size: 20px;
   color: #5ebebf;
@@ -586,16 +596,16 @@ h1 {
   .mlfc-ind::after {
     display: none;
   }
-  .mlfc-item{
+  .mlfc-item {
     margin-top: 10px;
   }
-  .map-title h3{
+  .map-title h3 {
     font-size: 14px;
   }
-  .mapn{
+  .mapn {
     font-size: 32px;
   }
-  #map{
+  #map {
     width: 80%;
     height: 70%;
     top: 20%;
@@ -640,5 +650,13 @@ h1 {
   .chunib div {
     font-size: 16px;
   }
-  
+  .visitors-item {
+    font-size: 12px;
+  }
+  .visnum {
+    font-size: 12px;
+  }
+  .hi-t{
+    font-size: 14px;
+  }
 }
