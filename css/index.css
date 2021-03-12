@@ -591,9 +591,91 @@ h1 {
 /* .madt{
   font-size: 14px;
 } */
-
+/* 宽度小于等于1800执行 */
+@media screen and (max-width: 1800px) {
+  .mlfc-name {
+    font-size: 12px;
+  }
+  .mlfc-line-box {
+    width: 56px;
+    margin: 2px;
+  }
+  .mlfc-bili {
+    margin-right: 2px;
+  }
+  .mlfc-ind {
+    font-size: 12px;
+    margin-right: 4px;
+  }
+  .mlfc-ind::after {
+    display: none;
+  }
+  .mlfc-item {
+    margin-top: 10px;
+  }
+  .map-title h3 {
+    font-size: 14px;
+  }
+  .mapn {
+    font-size: 32px;
+  }
+  #map {
+    width: 80%;
+    height: 70%;
+    top: 20%;
+  }
+}
+/* 宽度小于等于1700执行 */
+@media screen and (max-width: 1700px) {
+  .mppse {
+    font-size: 12px;
+  }
+  .mline-box {
+    width: 64px;
+    height: 5px;
+  }
+  .madt {
+    font-size: 12px;
+  }
+  .mlfc-name {
+    font-size: 12px;
+  }
+  .molist {
+    height: 250px;
+    width: 49%;
+    /* background-color: #033844; */
+  }
+  h1 {
+    font-size: 48px;
+  }
+  .ch-title h2 {
+    font-size: 16px;
+  }
+  .icontop {
+    width: 30px;
+    height: 30px;
+  }
+  .chunib {
+    margin: 6px;
+  }
+  .chunib p {
+    font-size: 12px;
+  }
+  .chunib div {
+    font-size: 16px;
+  }
+  .visitors-item {
+    font-size: 12px;
+  }
+  .visnum {
+    font-size: 12px;
+  }
+  .hi-t {
+    font-size: 14px;
+  }
+}
 /* 高度大于等于1200的情况下 */
-@media screen and (max-height: 1200px) {
+@media screen and (min-height: 1200px) {
   .map-box {
     height: 702px;
   }
@@ -800,88 +882,5 @@ h1 {
   }
   .visitors-item {
     height: 30px;
-  }
-}
-/* 宽度小于等于1800执行 */
-@media screen and (max-width: 1800px) {
-  .mlfc-name {
-    font-size: 12px;
-  }
-  .mlfc-line-box {
-    width: 56px;
-    margin: 2px;
-  }
-  .mlfc-bili {
-    margin-right: 2px;
-  }
-  .mlfc-ind {
-    font-size: 12px;
-    margin-right: 4px;
-  }
-  .mlfc-ind::after {
-    display: none;
-  }
-  .mlfc-item {
-    margin-top: 10px;
-  }
-  .map-title h3 {
-    font-size: 14px;
-  }
-  .mapn {
-    font-size: 32px;
-  }
-  #map {
-    width: 80%;
-    height: 70%;
-    top: 20%;
-  }
-}
-/* 宽度小于等于1700执行 */
-@media screen and (max-width: 1700px) {
-  .mppse {
-    font-size: 12px;
-  }
-  .mline-box {
-    width: 64px;
-    height: 5px;
-  }
-  .madt {
-    font-size: 12px;
-  }
-  .mlfc-name {
-    font-size: 12px;
-  }
-  .molist {
-    height: 250px;
-    width: 49%;
-    /* background-color: #033844; */
-  }
-  h1 {
-    font-size: 48px;
-  }
-  .ch-title h2 {
-    font-size: 16px;
-  }
-  .icontop {
-    width: 30px;
-    height: 30px;
-  }
-  .chunib {
-    margin: 6px;
-  }
-  .chunib p {
-    font-size: 12px;
-  }
-  .chunib div {
-    font-size: 16px;
-  }
-  .visitors-item {
-    font-size: 12px;
-  }
-  .visnum {
-    font-size: 12px;
-  }
-  .hi-t {
-    font-size: 14px;
   }
 }
