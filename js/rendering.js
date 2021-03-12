@@ -24,6 +24,26 @@ var rendlist5 = [
     name: "南宁沃顿国际大酒店",
     value: "12.5",
   },
+  {
+    name: "南宁沃顿国际大酒店",
+    value: "16.5",
+  },
+  {
+    name: "南宁沃顿国际大酒店",
+    value: "26.5",
+  },
+  {
+    name: "南宁沃顿国际大酒店",
+    value: "19.5",
+  },
+  {
+    name: "南宁沃顿国际大酒店",
+    value: "92.5",
+  },
+  {
+    name: "南宁沃顿国际大酒店",
+    value: "12.5",
+  },
 ];
 // 星级酒店热度排行TOP10月度预测
 var rendlist8 = [
@@ -153,3 +173,18 @@ let rendingInter = (id, list) => {
   });
 };
 rendingInter(interprovincial, interprovincialList);
+
+
+
+// $(function(){
+//   $('#rendChart5').liMarquee();
+// });
+// $(function(){
+//   $('.dowebok').liMarquee({
+//       direction: 'up'
+//   });
+//   console.log(1);
+// });
+// document.getElementById('#rendChart5').liMarquee({
+//   direction: 'up'
+// });

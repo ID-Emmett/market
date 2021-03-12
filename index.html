@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./css/dome.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/pseudo.css">
+    <!-- 滚动插件 -->
+    <link rel="stylesheet" href="./css/liMarquee.css">
 </head>
 
 <body>
@@ -450,18 +452,27 @@
                 </div>
             </div>
         </div>
-
         <div class="content-rtop">
-
         </div>
-
-
     </div>
+    <script src="./js/echarts.min.js"></script>
+    <script src="./js/china.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/rendering.js"></script>
+    <!-- 滚动插件 -->
+    <script src="./js/jquery-1.8.3.min.js"></script>
+    <script src="./js/jquery.liMarquee.js"></script>
+    <script>
+        $(function () {
+            $('.heat').liMarquee({
+                direction: 'up'
+            });
+        });
+    </script>
 </body>
-<script src="./js/echarts.min.js"></script>
-<script src="./js/china.js"></script>
-<!-- <script src="https://echarts.baidu.com/resource/echarts-stat-latest/dist/ecStat.min.js"></script> -->
-<script src="./js/index.js"></script>
-<script src="./js/rendering.js"></script>
+
+
+
+
 
 </html>
