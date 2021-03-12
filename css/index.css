@@ -592,6 +592,75 @@ h1 {
   font-size: 14px;
 } */
 
+/* 高度大于等于1200的情况下 */
+@media screen and (max-height: 1200px) {
+  .map-box {
+    height: 702px;
+  }
+  .chart-long {
+    margin-top: 25px;
+    height: 340px;
+  }
+  #map {
+    height: 84%;
+  }
+  .contb-right {
+    /* background-color: #5a5c5c; */
+    height: 100%;
+  }
+  .chart {
+    height: 340px;
+  }
+  /* 图二 */
+  .chunjie {
+    height: 290px;
+  }
+  #chunleft {
+    height: 240px;
+  }
+  /* 图三 */
+  .visitors {
+    /* padding-top: 40px; */
+    font-size: 18px;
+  }
+  .visitors-item {
+    height: 48px;
+  }
+  .visnamebox {
+    height: 28px;
+  }
+  .visnum {
+    font-size: 20px;
+  }
+  /* 图4 */
+  .chart-monthly {
+  }
+  .monthly-box {
+    margin-top: 20px;
+    height: 250px;
+  }
+  .mopse {
+    margin: 15% 0;
+    font-size: 18px;
+  }
+  .mlfc-name {
+    font-size: 14px;
+  }
+  /* 图5 */
+  .heat {
+    height: 260px;
+  }
+  /* 图6 */
+  #distributed {
+    height: 280px;
+  }
+  .hi-t{
+    font-size: 16px;
+  }
+  .heat-item{
+    height: 30px;
+  }
+}
 
 @media screen and (max-height: 1050px) {
   #distributed {
