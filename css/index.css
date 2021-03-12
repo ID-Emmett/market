@@ -730,9 +730,7 @@ h1 {
   .visnum {
     font-size: 20px;
   }
-  /* 图4 */
-  .chart-monthly {
-  }
+
   .monthly-box {
     margin-top: 20px;
     height: 250px;
@@ -811,9 +809,7 @@ h1 {
 }
 
 @media screen and (max-height: 900px) {
-  body {
-    /* background-color: #5e7174; */
-  }
+
   header {
     height: 66px;
   }
