@@ -2,18 +2,18 @@
   font-family: "时尚中黑简体";
   src: url(../fonts/时尚中黑简体.ttf);
 }
-@font-face {
+/* @font-face {
   font-family: "优设标题黑";
   src: url(../fonts/优设标题黑.ttf);
-}
+} */
 @font-face {
   font-family: "Akrobat-Black";
   src: url(../fonts/Akrobat-Black.otf);
 }
-@font-face {
+/* @font-face {
   font-family: "Akrobat-Bold";
   src: url(../fonts/Akrobat-Bold.otf);
-}
+} */
 @font-face {
   font-family: "Akrobat-Regular";
   src: url(../fonts/Akrobat-Regular.otf);
