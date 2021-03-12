@@ -2,6 +2,7 @@
 
 #### 介绍
 访问地址: http://morenid.gitee.io/market
+重新部署: https://gitee.com/morenid/market/pages
 
 #### 软件架构
 软件架构说明
