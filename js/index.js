@@ -125,7 +125,7 @@ let mapOption = {
             formatter: [
               "{b| }",
               "{a|{b}游客量月度预测}",
-              "{x| 467,251}", //显示数据
+              "{x| {c}}", //显示数据
               "{d| 万人次}",
               // "{c|广西游客量月度预测}",
             ].join("\n"),
@@ -194,26 +194,27 @@ let mapOption = {
       //     }
       // }],
 
-      regions: [
-        {
-          name: "南海诸岛",
-          itemStyle: {
-            // 隐藏地图
-            normal: {
-              opacity: 0, // 为 0 时不绘制该图形
-            },
-          },
-          label: {
-            show: false, // 隐藏文字
-          },
-        },
-      ],
+      // regions: [
+      //   {
+      //     name: "南海诸岛",
+      //     itemStyle: {
+      //       // 隐藏地图
+      //       normal: {
+      //         opacity: 0, // 为 0 时不绘制该图形
+      //       },
+      //     },
+      //     label: {
+      //       show: false, // 隐藏文字
+      //     },
+      //   },
+      // ],
       //
       data: [
         {
           name: "广西",
-          selected: true,
-        }, // selected:true 默认选中
+          value:'456789',
+          selected: true,//默认选中
+        }, // selected:true 
       ],
       zlevel: 1,
     },
