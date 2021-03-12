@@ -708,7 +708,7 @@ let monthlyOption = {
       origin: [64.5, 32.5], //中心点
       scale: [1.0, 1.0], //缩放
       style: {
-        image: "../images/user.png",
+        image: "/images/user.png",
         // width: 129,
         // height: 65,
         opacity: 1,
