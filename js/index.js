@@ -187,39 +187,43 @@ for (let i = 0; i < mapList.length; i++) {
 mapFn(mapList);
 
 // 地图模块下的柱状图
-let distributed = echarts.init(document.getElementById("distributed"));
 
 const distribution = (bartu, linetu, citytu) => {
-  //获取最大值--bartu柱状图列表的最大值下标
-  let getMaxIndex = (arr) => {
-    var max = arr[0];
-    //声明了个变量 保存下标值
-    var index = 0;
-    for (var i = 0; i < arr.length; i++) {
-      if (max < arr[i]) {
-        max = arr[i];
-        index = i;
-      }
-    }
-    return index;
-  };
+  const distributed = echarts.init(document.getElementById("distributed"));
+  // Math.max方法需要传递一个展开数组 或者多个值 不能直接放数组 优化方案
+  const valueMax = Math.max(...bartu);
+  const maxIndex = bartu.indexOf(valueMax);
+  //获取最大值--bartu柱状图列表的最大值下标  原始方案
+  // let getMaxIndex = (arr) => {
+  //   var max = arr[0];
+  //   //声明了个变量 保存下标值
+  //   var index = 0;
+  //   for (var i = 0; i < arr.length; i++) {
+  //     if (max < arr[i]) {
+  //       max = arr[i];
+  //       index = i;
+  //     }
+  //   }
+  //   return index;
+  // };
   //替换下标内容--换成对象形式,实现图表最大值颜色变化
   let maxrep = {
-    value: bartu[getMaxIndex(bartu)],
+    value: bartu[maxIndex],
     itemStyle: { color: "#D76F56" },
   };
-  bartu.splice(getMaxIndex(bartu), 1, maxrep);
-
+  bartu.splice(maxIndex, 1, maxrep);
   //替换下标内容--换成对象形式,实现折线图最大值颜色变化
+  const linevalueMax = Math.max(...linetu); //获取最大值
+  const linemaxIndex = linetu.indexOf(linevalueMax); //获取最大值下标
   let maxlinerep = {
-    value: linetu[getMaxIndex(linetu)],
+    value: linetu[linemaxIndex],
     itemStyle: {
       borderColor: "#D76F56",
       // color: "yellow",
       borderWidth: 4,
     },
   };
-  linetu.splice(getMaxIndex(linetu), 1, maxlinerep);
+  linetu.splice(linemaxIndex, 1, maxlinerep);
 
   let distributedOption = {
     grid: {
