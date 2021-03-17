@@ -180,7 +180,7 @@ let mapList = [
 // 指定默认选择的城市
 for (let i = 0; i < mapList.length; i++) {
   if (mapList[i].name === "广西") {
-    mapList[i].selected = true
+    mapList[i].selected = true;
   }
 }
 // 传递一个数组,需要的格式为 [{name:城市名称,value:值}] 参考mapList
