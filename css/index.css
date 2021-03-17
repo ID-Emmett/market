@@ -277,10 +277,10 @@ h1 {
   height: 150px;
   /* background-color: #368aac; */
 }
-.str_wrap{
+.str_wrap {
   background: #012936 !important;
 }
-.heat-item{
+.heat-item {
   padding: 0 8% !important;
   margin-top: 16px !important;
 }
@@ -696,7 +696,7 @@ h1 {
     margin-top: 25px;
     height: 340px;
   }
-  .mlfc-name{
+  .mlfc-name {
     width: 50px;
   }
   /* #map {
@@ -780,7 +780,7 @@ h1 {
   .mopse {
     margin-left: 10px;
   }
-  .mline-box + span{
+  .mline-box + span {
     margin-left: 10px;
   }
   .visnum {
@@ -812,7 +812,6 @@ h1 {
 }
 
 @media screen and (max-height: 900px) {
-
   header {
     height: 66px;
   }
@@ -823,7 +822,7 @@ h1 {
     width: 30px;
     height: 30px;
   }
-  .mline-box + span{
+  .mline-box + span {
     margin-left: 10px;
     font-size: 12px;
   }
@@ -861,7 +860,7 @@ h1 {
   }
   .mopse {
     height: 10px;
-    margin-left:4px;
+    margin-left: 4px;
   }
   .monthly-box {
     transform: scale(0.8);
