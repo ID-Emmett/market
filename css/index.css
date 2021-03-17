@@ -193,7 +193,7 @@ h1 {
   align-items: center;
   margin-top: 16px;
   /* background-color: #505658; */
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 .maplb {
   font-size: 10px;
@@ -212,6 +212,9 @@ h1 {
   font-family: Microsoft YaHei;
   font-weight: 400;
   color: #ffffff;
+  /* background-color: pink; */
+  width: 40px;
+  /* text-align: center; */
 }
 .mlfc-bili {
   font-size: 12px;
@@ -693,6 +696,9 @@ h1 {
     margin-top: 25px;
     height: 340px;
   }
+  .mlfc-name{
+    width: 50px;
+  }
   /* #map {
     height: 84%;
   } */
@@ -772,7 +778,10 @@ h1 {
     padding-top: 10px;
   }
   .mopse {
-    margin-left: 30px;
+    margin-left: 10px;
+  }
+  .mline-box + span{
+    margin-left: 10px;
   }
   .visnum {
     font-size: 14px;
@@ -814,6 +823,10 @@ h1 {
     width: 30px;
     height: 30px;
   }
+  .mline-box + span{
+    margin-left: 10px;
+    font-size: 12px;
+  }
   .title-i {
     margin-top: -10px;
   }
@@ -848,6 +861,7 @@ h1 {
   }
   .mopse {
     height: 10px;
+    margin-left:4px;
   }
   .monthly-box {
     transform: scale(0.8);
